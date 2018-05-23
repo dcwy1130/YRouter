@@ -21,7 +21,7 @@ NSString *const YRouterParameterUserInfo = @"YRouterParameterUserInfo";
  *  保存了所有已注册的 URL
  *  结构类似 @{@"beauty": @{@":id": {@"_", [block copy]}}}
  */
-@property (atomic) NSMutableDictionary *routes;
+@property (nonatomic) NSMutableDictionary *routes;
 @end
 
 @implementation YRouter
