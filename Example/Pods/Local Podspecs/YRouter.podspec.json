@@ -1,0 +1,22 @@
+{
+  "name": "YRouter",
+  "version": "0.1.0",
+  "summary": "A short description of YRouter.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/dcwy1130/YRouter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "dcwy1130": "zhangdexiong@yryz.com"
+  },
+  "source": {
+    "git": "https://github.com/dcwy1130/YRouter.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YRouter/Classes/**/*"
+}

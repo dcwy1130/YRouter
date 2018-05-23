@@ -1,0 +1,16 @@
+PODS:
+  - YRouter (0.1.0)
+
+DEPENDENCIES:
+  - YRouter (from `../`)
+
+EXTERNAL SOURCES:
+  YRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YRouter: 7f612a4fd98dc3ba5af82f034e53ed52acd884bc
+
+PODFILE CHECKSUM: 3470d637b6e3d87ca258be45eba6c749fd08d020
+
+COCOAPODS: 1.5.0
