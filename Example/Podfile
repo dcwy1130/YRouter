@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YRouter_Example' do
+  pod 'YRouter', :path => '../'
+
+  target 'YRouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
