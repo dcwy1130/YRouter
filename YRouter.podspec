@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YRouter'
-  s.version          = '2.1.2'
+  s.version          = '2.1.3'
   s.summary          = 'Components YRouter.'
 
   s.description      = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'YRouter/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'YRouter/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

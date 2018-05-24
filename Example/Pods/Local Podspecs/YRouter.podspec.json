@@ -1,6 +1,6 @@
 {
   "name": "YRouter",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "summary": "Components YRouter.",
   "description": "Components of route YRouter",
   "homepage": "https://github.com/dcwy1130/YRouter",
@@ -13,10 +13,11 @@
   },
   "source": {
     "git": "https://github.com/dcwy1130/YRouter.git",
-    "tag": "2.1.0"
+    "tag": "2.1.2"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YRouter/Classes/**/*"
+  "source_files": "YRouter/Classes/**/*",
+  "public_header_files": "Pod/Classes/*.h"
 }
