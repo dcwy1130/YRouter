@@ -8,11 +8,22 @@
 
 #import "YAppDelegate.h"
 
+#import "YRouter/YModuleManager.h"
+
 @implementation YAppDelegate
+
+- (void)broadcastModulesApplicationSelector:(void (^ __nonnull)(id<YModuleProtocol> module))completion {
+    for (id<YModuleProtocol> module in [[YModuleManager sharedInstance] allModules]) {
+        completion(module);
+    }
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self broadcastModulesApplicationSelector:^(id<YModuleProtocol> module) {
+        [module application:application didFinishLaunchingWithOptions:launchOptions];
+    }];
     return YES;
 }
 

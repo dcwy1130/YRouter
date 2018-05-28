@@ -8,10 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+#if defined(__cplusplus)
+#define Y_EXTERN extern "C" __attribute__((visibility("default")))
+#else
+#define Y_EXTERN extern __attribute__((visibility("default")))
+#endif
+
+#define Y_EXPORT_MODULE(moduleName) \
+Y_EXTERN void YRegisterModule(Class); \
++ (NSString *)moduleName { return @#moduleName; } \
++ (void)load { YRegisterModule(self); }
+
 @protocol YModuleProtocol <UIApplicationDelegate>
 
 @optional
-+ (instancetype)sharedInstance;
++ (NSString *)moduleName;
 
 @end
 

@@ -7,12 +7,15 @@
 //
 
 #import "YViewController.h"
+#import "YRouter/YModuleManager.h"
 
-@interface YViewController ()
+@interface YViewController () <YModuleProtocol>
 
 @end
 
 @implementation YViewController
+
+Y_EXPORT_MODULE(YModule)
 
 - (void)viewDidLoad
 {
@@ -24,6 +27,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSLog(@"%@ %@", self.class, NSStringFromSelector(_cmd));
+    return YES;
 }
 
 @end
