@@ -36,4 +36,6 @@ Y_EXTERN void YRegisterModule(Class); \
 
 + (Class)classForProtocol:(Protocol *)protocol;
 
++ (void)broadcastModulesApplicationSelector:(void (^)(id<YModuleProtocol> module))completion;
+
 @end

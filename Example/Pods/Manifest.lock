@@ -1,5 +1,5 @@
 PODS:
-  - YRouter (2.1.2)
+  - YRouter (2.1.5)
 
 DEPENDENCIES:
   - YRouter (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YRouter: 6b598ae7dd0c3cfe7b58c497fad5d693c6b7385c
+  YRouter: c5effacde7fa37fc757a266f805a9b1694601964
 
 PODFILE CHECKSUM: 3470d637b6e3d87ca258be45eba6c749fd08d020
 

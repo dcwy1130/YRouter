@@ -49,6 +49,14 @@
     return [[self sharedInstance] classForProtocol:protocol];
 }
 
++ (void)broadcastModulesApplicationSelector:(void (^)(id<YModuleProtocol> module))completion {
+    for (id<YModuleProtocol> module in [[self sharedInstance] allModules]) {
+        if (completion) {
+            completion(module);
+        }
+    }
+}
+
 // MARK: - instance method
 - (void)addClass:(Class)aClass forProtocol:(Protocol *)protocol {
     NSString *className = NSStringFromClass(aClass);
