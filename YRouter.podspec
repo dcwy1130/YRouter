@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YRouter'
-  s.version          = '2.1.3'
+  s.version          = '2.1.4'
   s.summary          = 'Components YRouter.'
 
   s.description      = <<-DESC
